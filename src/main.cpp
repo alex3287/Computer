@@ -1,4 +1,8 @@
-//
-// Created by Александр Мангазеев on 12.12.2020.
-//
+#include <QString>
+#include <iostream>
 
+int main() {
+    QString russianString("Русский текст");
+    std::cout << russianString.toStdString() << std::endl;
+    return 0;
+}
