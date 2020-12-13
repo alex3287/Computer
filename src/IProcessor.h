@@ -6,14 +6,22 @@
 #define COMPUTER_IPROCESSOR_H
 
 #include <QString>
+#include <QTextStream>
 
 class IProcessor {
+
 public:
+    enum ProcessorType
+    {
+        x86,
+        x64
+    };
+
     ~IProcessor();
     virtual QString getVersion() = 0;
     virtual QString getType() = 0;
     virtual QString getSpeed() = 0;
-    virtual QString getProcessorInfo() = 0;
+    QString getProcessorInfo();
 };
 
 

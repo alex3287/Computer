@@ -4,20 +4,24 @@
 
 #include "IProcessor.h"
 
-IProcessor::~IProcessor() {}
+QTextStream out(stdout);
 
-QString IProcessor::getVersion() {
-    return "Processor version ";
+IProcessor::~IProcessor() {
+    out<<"Bay-Bay"<<endl;
 }
-
-QString IProcessor::getType() {
-    return "Processor type ";
-}
-
-QString IProcessor::getSpeed() {
-    return "Processor speed ";
-}
-
+//
+//QString IProcessor::getVersion() {
+//    return "Processor version ";
+//}
+//
+//QString IProcessor::getType() {
+//    return "Processor type ";
+//}
+//
+//QString IProcessor::getSpeed() {
+//    return "Processor speed ";
+//}
+//
 QString IProcessor::getProcessorInfo() {
-    return "Processor for " + getVersion() + getType() + getSpeed();
+    return "Processor for:\n1. " + getVersion() +"\n2. "+ getType()+"\n3. "+ getSpeed();
 }

@@ -7,14 +7,14 @@
 
 #include "IProcessor.h"
 
-class IntelProcessor {
+class IntelProcessor: public IProcessor {
 private:
     QString version;
     int speed;
-    int procType; //fixme
+    ProcessorType procType;
 
 public:
-    IntelProcessor(QString version, int speed, int procType);
+    IntelProcessor(QString version, int speed, ProcessorType procType);
     QString getVersion();
     QString getType();
     QString getSpeed();
