@@ -6,11 +6,9 @@
 #define COMPUTER_COMPUTER_H
 
 
-
 class Computer {
 
 };
-
 
 
 #endif //COMPUTER_COMPUTER_H
