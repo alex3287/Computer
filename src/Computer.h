@@ -14,6 +14,7 @@ private:
 
 public:
     Computer(IProcessor* processor);
+    ~Computer();
     QString showComputer();
 
 };

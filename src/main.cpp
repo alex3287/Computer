@@ -2,6 +2,8 @@
 #include <QTextStream>
 #include "IntelProcessor.h"
 #include "AMDProcessor.h"
+#include "IProcessor.h"
+#include "Computer.h"
 
 enum ProcessorType
 {
@@ -11,15 +13,16 @@ enum ProcessorType
 
 int main() {
     QTextStream out(stdout);
-    out<<"hello world"<<endl;
-    ProcessorType s = x64;
-    out<<s<<endl;
-    IntelProcessor Ab("Intel-1", 15, IProcessor::x64);
-    out<<Ab.getVersion()<<endl;
-    out<<Ab.getProcessorInfo()<<endl;
 
-    AMDProcessor amdProc("AMD-1", 20, IProcessor::x86);
-    out<<amdProc.getVersion()<<endl;
+// создадим 2 разных объекта IProcessor
+    IProcessor *intel_1 = new IntelProcessor("Intel-1", 15, IProcessor::x64);
+    IProcessor *amd_1 = new AMDProcessor("AMD-1", 25, IProcessor::x86);
+
+// создаем объекты компьютеры и внедряем процессоры
+    Computer *comp_1 = new Computer(intel_1);
+    Computer *comp_2 = new Computer(amd_1);
+    out<<comp_1->showComputer()<<endl;
+    out<<comp_2->showComputer()<<endl;
 
     return 0;
 }
