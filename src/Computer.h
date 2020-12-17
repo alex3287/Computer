@@ -6,7 +6,15 @@
 #define COMPUTER_COMPUTER_H
 
 
+#include "IProcessor.h"
+
 class Computer {
+private:
+    IProcessor* processor;
+
+public:
+    Computer(IProcessor* processor);
+    QString showComputer();
 
 };
 
