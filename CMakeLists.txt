@@ -10,13 +10,12 @@ set(CMAKE_AUTOMOC ON)
 find_package(Qt5 REQUIRED COMPONENTS
         # список необходимых библиотек
         Core
-        Charts
         # и т.д., например Widgets, Charts
         )
 
 file(GLOB_RECURSE SOURCE_FILES "src/*.cpp")
 file(GLOB_RECURSE HEADER_FILES "src/*.hpp")
-
+#qt_wrap_cpp(SOURCE_FILES ${HEADER_FILES})
 
 add_executable(
         # имя исполняемого файла
