@@ -1,6 +1,6 @@
 //
 // Created by Александр Мангазеев on 12.12.2020.
-//
+// Класс интерфейс
 
 #ifndef COMPUTER_IPROCESSOR_H
 #define COMPUTER_IPROCESSOR_H

@@ -1,6 +1,6 @@
 //
 // Created by Александр Мангазеев on 17.12.2020.
-//
+// Конкретный класс для процессора АМД
 
 #ifndef COMPUTER_AMDPROCESSOR_H
 #define COMPUTER_AMDPROCESSOR_H
