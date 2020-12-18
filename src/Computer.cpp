@@ -14,6 +14,6 @@ Computer::~Computer() {
     delete processor;
 }
 
-QString Computer::showComputer() {
+QString Computer::showProcessor() {
     return "This computer has processor " + processor -> getVersion();
 }

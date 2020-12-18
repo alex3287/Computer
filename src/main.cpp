@@ -21,8 +21,8 @@ int main() {
 // создаем объекты компьютеры и внедряем процессоры
     Computer *comp_1 = new Computer(intel_1);
     Computer *comp_2 = new Computer(amd_1);
-    out<<comp_1->showComputer()<<endl;
-    out<<comp_2->showComputer()<<endl;
+    out<<comp_1->showProcessor()<<endl;
+    out<<comp_2->showProcessor()<<endl;
 
     return 0;
 }

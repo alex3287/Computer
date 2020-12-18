@@ -16,7 +16,7 @@ public:
     // внедренее зависимости реализовал через конструктор
     Computer(IProcessor* processor);
     ~Computer();
-    QString showComputer();
+    QString showProcessor();
 
 };
 
