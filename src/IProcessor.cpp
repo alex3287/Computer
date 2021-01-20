@@ -23,5 +23,5 @@ IProcessor::~IProcessor() {
 //}
 //
 QString IProcessor::getProcessorInfo() {
-    return "Processor for:\n1. " + getVersion() +"\n2. "+ getType()+"\n3. "+ getSpeed();
+    return "Processor:\n* " + getVersion() +"\n* "+ getType()+"\n* "+ getSpeed();
 }

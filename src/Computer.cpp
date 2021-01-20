@@ -15,5 +15,6 @@ Computer::~Computer() {
 }
 
 QString Computer::showProcessor() {
-    return "This computer has processor " + processor -> getVersion();
+//    return "This computer has processor " + processor -> getVersion();
+    return "Your computer include: \n"+processor->getProcessorInfo();
 }

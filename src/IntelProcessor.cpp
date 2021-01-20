@@ -8,15 +8,15 @@ IntelProcessor::IntelProcessor(QString version, int speed, ProcessorType procTyp
 }
 
 QString IntelProcessor::getVersion() {
-    return "Processor version Intel " + version;
+    return "Processor version Intel: " + version;
 }
 
 QString IntelProcessor::getSpeed() {
     QString num;
-    return "Processor speed " + num.setNum(speed);
+    return "Processor speed: " + num.setNum(speed) + "GHz";
 }
 
 QString IntelProcessor::getType() {
     QString num;
-    return "Processor type testIntel " + num.setNum(procType);
+    return "Processor type testIntel: " + num.setNum(procType);
 }

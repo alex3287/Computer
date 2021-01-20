@@ -8,15 +8,15 @@ AMDProcessor::AMDProcessor(QString version, int speed, ProcessorType procType): 
 }
 
 QString AMDProcessor::getVersion() {
-    return "Processor version AMD " + version;
+    return "Processor version AMD: " + version;
 }
 
 QString AMDProcessor::getSpeed() {
     QString num;
-    return "Processor speed AMD " + num.setNum(speed);
+    return "Processor speed AMD: " + num.setNum(speed) + "GHz";
 }
 
 QString AMDProcessor::getType() {
     QString num;
-    return "Processor type testAMD " + num.setNum(procType);
+    return "Processor type testAMD: " + num.setNum(procType);
 }
